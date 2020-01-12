@@ -6,14 +6,14 @@
 /*   By: lcros-mo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 21:36:31 by lcros-mo          #+#    #+#             */
-/*   Updated: 2019/12/11 21:38:39 by lcros-mo         ###   ########.fr       */
+/*   Updated: 2020/01/12 19:48:58 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isalnum(int c)
 {
-  if(c >= 65 && c <= 122)
-    return(c);
-  else
-    return(0);
+	if (c >= 65 && c <= 122)
+		return (c);
+	else
+		return (0);
 }

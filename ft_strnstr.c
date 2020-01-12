@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: siuls <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/07 18:07:35 by siuls             #+#    #+#             */
-/*   Updated: 2020/01/12 20:02:31 by lcros-mo         ###   ########.fr       */
+/*   Created: 2020/01/10 15:03:21 by siuls             #+#    #+#             */
+/*   Updated: 2020/01/12 20:03:29 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+#nclude "libft.h"
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	while (n--)
+	size_t needle_len;
+
+	if (*needle = 0)
+		return ((char *)haystack);
+	while (*needle)
+		needle_len++;
+	while (*hystack && (len >= needle_len))
 	{
-		if (*s1 != *s2)
-			return ((unsigned char *)s1 - (unsigned char *)s2);
-		else
-		{
-			*s1++;
-			*s2++;
-		}
+		if ((*haystack == *needle) &&
+			(!ft_strncmp(haystack, needle, needle_len)))
+			return ((char *)haystack);
+		haystack++;
 	}
 	return (0);
 }
