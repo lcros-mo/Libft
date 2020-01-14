@@ -1,24 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchar.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcros-mo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lcros-mo <lcros-mo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/02 17:52:25 by lcros-mo          #+#    #+#             */
-/*   Updated: 2019/12/15 21:01:44 by lcros-mo         ###   ########.fr       */
+/*   Updated: 2020/01/14 02:03:54 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_memchr(void *src, int c, size_t len)
+#include "libft.h"
+
+void	*ft_memchr(const void *src, int c, size_t len)
 {
-	int		i;
+	size_t		i;
 	char	*rest;
 
+	rest = NULL;
 	i = 0;
-	while (src[i] != 0 || src[i] != c || i != len)
+	while (((char *)src)[i] != 0 ||((char *) src)[i] != c || i != len)
 		i++;
-	while (src[i] != 0)
-		rest++ = src[i++];
+	while (((char *)src)[i] != 0)
+	{
+		*rest = ((char *)src)[i];
+		i++;
+		rest++;
+	}
 	return (rest);
 }

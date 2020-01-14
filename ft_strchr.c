@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcros-mo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lcros-mo <lcros-mo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/14 09:50:35 by lcros-mo          #+#    #+#             */
-/*   Updated: 2019/12/15 20:29:46 by lcros-mo         ###   ########.fr       */
+/*   Updated: 2020/01/13 21:37:39 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
 	while (*str != (char)c)
 	{
-		*str++;
+		str++;
 		if (*str == 0)
 			return (0);
 	}
-	return ((char *)s);
+	return ((char *)str);
 }

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcros-mo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lcros-mo <lcros-mo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/15 19:09:49 by lcros-mo          #+#    #+#             */
-/*   Updated: 2019/12/15 20:06:36 by lcros-mo         ###   ########.fr       */
+/*   Updated: 2020/01/14 00:53:41 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	char	*ps;
 

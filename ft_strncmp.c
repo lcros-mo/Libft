@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: siuls <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: lcros-mo <lcros-mo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/07 18:07:35 by siuls             #+#    #+#             */
-/*   Updated: 2020/01/12 20:02:31 by lcros-mo         ###   ########.fr       */
+/*   Updated: 2020/01/14 01:38:17 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -18,8 +20,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 			return ((unsigned char *)s1 - (unsigned char *)s2);
 		else
 		{
-			*s1++;
-			*s2++;
+			s1++;
+			s2++;
 		}
 	}
 	return (0);

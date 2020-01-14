@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: siuls <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: lcros-mo <lcros-mo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/08 14:04:27 by siuls             #+#    #+#             */
-/*   Updated: 2020/01/08 15:40:04 by siuls            ###   ########.fr       */
+/*   Updated: 2020/01/13 20:45:21 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
 
 size_t	ft_strlcpy(char *dst, char const *src, size_t dstsize)
 {

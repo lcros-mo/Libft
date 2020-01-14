@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: siuls <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: lcros-mo <lcros-mo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/11 00:07:06 by siuls             #+#    #+#             */
-/*   Updated: 2020/01/12 19:43:48 by lcros-mo         ###   ########.fr       */
+/*   Updated: 2020/01/13 23:55:35 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ int		ft_atoi(const char *str)
 		if ((val * nbr) < -2147483648)
 			return (0);
 	}
-	return ((int)(nbr * sign));
+	return ((int)(nbr * val));
 }

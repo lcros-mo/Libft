@@ -3,28 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcros-mo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lcros-mo <lcros-mo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/10 20:30:23 by lcros-mo          #+#    #+#             */
-/*   Updated: 2019/12/15 21:09:25 by lcros-mo         ###   ########.fr       */
+/*   Updated: 2020/01/13 21:21:06 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_memcmp(const void *f, const void *s, size_t n)
-{
-	int					i;
-	const unsigned char	*pf;
-	const unsigned char	*ps;
+#include "libft.h"
 
-	i = 0;
-	pf = f;
-	ps = s;
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
+{
+	const unsigned char	*ps1;
+	const unsigned char	*ps2;
+
 	if (n)
 	{
-		while (pf[i] == ps[i])
-			i++;
-		if (i == n)
-			return (0);
-		return (pf[i] - ps[i]);
+		ps1 = s1;
+		ps2 = s2;
+		while (n-- > 0)
+			if ((*(ps1++)) != (*(ps2++)))
+				return ((int)((*(--ps1)) - (*(--ps2))));
 	}
+	return (0);
 }

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcros-mo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lcros-mo <lcros-mo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/12 20:25:28 by lcros-mo          #+#    #+#             */
-/*   Updated: 2020/01/12 21:08:36 by lcros-mo         ###   ########.fr       */
+/*   Updated: 2020/01/14 01:33:04 by lcros-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_strcpy(const char *src, char *dst)
+char	*ft_strcpy(const char *src, char *dst)
 {
 	int		i;
 
